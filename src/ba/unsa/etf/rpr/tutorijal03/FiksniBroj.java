@@ -19,7 +19,7 @@ public class FiksniBroj extends TelefonskiBroj{
 
         String ispis = "";
 
-        switch(Grad){
+        switch(grad){
 
             case TRAVNIK :
                 ispis += "030";
@@ -52,7 +52,7 @@ public class FiksniBroj extends TelefonskiBroj{
                 ispis += "039";
                 break;
             case BRCKO :
-                ispis += "049":
+                ispis += "049";
                 break;
             case MRKONJICGRAD :
                 ispis += "050";
@@ -94,6 +94,10 @@ public class FiksniBroj extends TelefonskiBroj{
     public int hashCode() {
         String ispis = this.ispisi();
         return ispis.hashCode();
+    }
+
+    public Grad getGrad(){
+        return grad;
     }
 }
 
